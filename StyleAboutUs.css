@@ -144,6 +144,15 @@ table {
     padding-bottom: 50px;
 }
 
+#carouselExampleCaptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    text-align: center;
+    margin-left: 500px;
+}
+
 @media screen and (max-width: 1000px) {
     #page_nav ul li {
         margin: 5px;
@@ -163,5 +172,13 @@ table {
     }
     #ava {
         width: 200px;
+    }
+    #carouselExampleCaptions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        text-align: center;
+        margin-left: 230px;
     }
 }
