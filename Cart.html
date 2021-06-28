@@ -2,7 +2,6 @@
 <html>
 
 <head>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
     <link rel="stylesheet" href="StyleCart.css">
 
@@ -25,21 +24,22 @@
         <ul>
 
             <li>
-                <a href="index.html" title="HomePage" id="Pages">Home Page</a>
+                <a href="index.html" title="Home Page" id="Pages">Home Page</a>
             </li>
 
-            <li>
-                <a href="Stuff.html" title="Stuff" id="Pages">Stuff</a>
-            </li>
+            <div class="dropdown">
+                <button class="dropbtn">Stuff</button>
+                <div class="dropdown-content">
+                    <a href="Stuff.html" title="Stuff" id="Pages">Stuffed Animals</a>
+                    <a href="KeyChain.html" title="KeyChain" id="Pages">Keychain</a>
+                    <a href="Others.html" title="Others" id="Pages">Other</a>
+                </div>
+            </div>
 
-            <li>
-                <a href="KeyChain.html" title="KeyChain" id="Pages">Key Chain</a>
-            </li>
+            <input type="text" class="search" id="Pages">
 
-            <input type="text" class="search">
-
-            <li>
-                <a href="Cart.html"><img class="cart_image" style="width: 29px;" src="https://i.imgur.com/9KEzml0.png" title="source: imgur.com" /></a>
+            <li class="cart" id="Pages">
+                <ion-icon name="basket"></ion-icon><a href="Cart.html"> Your Cart: </a><span>0</span>
             </li>
 
         </ul>
@@ -65,64 +65,20 @@
 
         <div style="font-size: 40px; margin-left: 60px; font-weight: bold;">Order Information</div>
 
-        <table style="background-color: #81b214; margin: 20px; margin-left: 60px;">
+        <div class="product-container">
+            <div class="product-header">
+                <h5 class="product-title">PRODUCT</h5>
+                <h5 class="price">PRICE</h5>
+                <h5 class="quantity">QUANTITY</h5>
+                <h5 class="total">TOTAL</h5>
+            </div>
+            <div class="products"></div>
+        </div>
 
-            <thead>
-
-                <th>
-                    <div style="margin-left: 10px; margin-top: 10px; margin-right: 10px; margin-bottom: 5px; border: solid 4px black;" class="image_container">
-                        <img style="width: 220px;" src="https://kaldrop.com/main/ext/image.php?id=yzinRB3CAFtc9NMNaOPy.jpg">
-                    </div>
-                </th>
-
-                <td style="width: 100%; font-size: 30px; padding-left: 50px;" id="text_container">
-                    <div style="font-weight: bold;" id="name">
-                        Among Us Key Chain (x10)
-                    </div>
-
-                    <div id="description">
-                        - Size: Small
-                        <br> - Main color: Has all color
-                        <br>Price: 10.000 VND/key chain
-                    </div>
-                </td>
-
-            </thead>
-
-        </table>
-
-        <table style="background-color: #f8a1d1; margin: 20px; margin-left: 60px;">
-
-            <thead>
-
-                <th>
-                    <div style="margin-left: 10px; margin-top: 10px; margin-right: 10px; margin-bottom: 5px; border: solid 4px black;" class="image_container">
-                        <img style="width: 224px;" src="https://images-na.ssl-images-amazon.com/images/I/31aqA4wxbQL._AC_.jpg">
-                    </div>
-                </th>
-
-                <td style="width: 100%; font-size: 30px; padding-left: 50px;" id="text_container">
-                    <div style="font-weight: bold;" id="name">
-                        Shiba Inu Stuff (x1)
-                    </div>
-
-                    <div id="description">
-                        - Size: Medium
-                        <br> - Main color: dark-yellow and light-yellow
-                        <br>Price: 50.000 VND
-                    </div>
-
-                </td>
-
-            </thead>
-
-        </table>
-
-        <div style="font-size: 50px; margin-left: 60px; font-weight: bold; color: #ce1212; text-decoration: underline;">Total: 150.000 VND</div>
-
-        <button style="font-size: 40px; margin-left: 60px; padding-top: 10px; padding-bottom: 10px; padding-right: 30px; padding-left: 30px; margin-top: 20px;" id="confirm">Confirm</button>
+        <button onclick="window.location.href='Confirm.html'" style="font-size: 40px; margin-left: 60px; padding-top: 10px; padding-bottom: 10px; padding-right: 30px; padding-left: 30px; margin-top: 20px;" id="confirm">Confirm</button>
 
     </form>
+
 
     <footer>
 
@@ -165,6 +121,9 @@
     </footer>
 
     <script src="Cart.js"></script>
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

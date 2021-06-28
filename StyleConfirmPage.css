@@ -1,0 +1,38 @@
+.logo {
+    text-align: center;
+    padding: 15px;
+}
+
+#page_header {
+    background-size: cover;
+    height: 300px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+#title {
+    font-family: 'Concert One', cursive;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    height: 50px;
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#general {
+    font-family: 'Concert One', cursive;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 50px;
+}

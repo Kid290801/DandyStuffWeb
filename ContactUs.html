@@ -3,7 +3,7 @@
 
 <head>
 
-    <link rel="stylesheet" href="StyleAboutUs.css">
+    <link rel="stylesheet" href="ContactUs.css">
 
     <title>Dandy Stuff Shop</title>
 
@@ -14,7 +14,7 @@
     <header id="page_header">
 
         <div class="logo">
-            <a href="https://imgur.com/NoU41ts"><img style="width: 380px;" src="https://i.imgur.com/NoU41ts.png" /></a>
+            <a href="index.html"><img style="width: 380px;" src="https://i.imgur.com/NoU41ts.png" /></a>
         </div>
 
     </header>
@@ -24,22 +24,17 @@
         <ul>
 
             <li>
-                <a href="index.html" title="HomePage" id="Pages">Home Page</a>
+                <a href="index.html" title="Home Page" id="Pages">Home Page</a>
             </li>
 
-            <li>
-                <a href="Stuff.html" title="Stuff" id="Pages">Stuff</a>
-            </li>
-
-            <li>
-                <a href="KeyChain.html" title="KeyChain" id="Pages">Key Chain</a>
-            </li>
-
-            <input type="text" class="search">
-
-            <li>
-                <a href="Cart.html"><img class="cart_image" style="width: 29px;" src="https://i.imgur.com/9KEzml0.png" title="source: imgur.com" /></a>
-            </li>
+            <div class="dropdown">
+                <button class="dropbtn">Stuff</button>
+                <div class="dropdown-content">
+                    <a href="Stuff.html" title="Stuff" id="Pages">Stuffed Animals</a>
+                    <a href="KeyChain.html" title="KeyChain" id="Pages">Keychain</a>
+                    <a href="Others.html" title="Others" id="Pages">Other</a>
+                </div>
+            </div>
 
         </ul>
 
@@ -51,35 +46,40 @@
 
     <form>
 
-        <div style="font-size: 40px; margin-left: 60px;">
-            Name:<br>
-            <input id="name" style="font-size: 30px; padding: 10px; width: 800px;" type="text" name="user_name" placeholder="Enter your name" required>
+        <div></div>
+        Name:<br>
+        <input id="name" style="font-size: 30px; padding: 10px; width: 800px;" type="text" name="user_name"
+            placeholder="Enter your name" required>
         </div>
 
-        <div style="font-size: 40px; margin-left: 60px;">
+        <div>
             Age:<br>
-            <input id="age" style="font-size: 30px; padding: 10px; width: 800px;" type="number" name="user_age" required>
+            <input id="age" style="font-size: 30px; padding: 10px; width: 800px;" type="number" name="user_age"
+                required>
         </div>
 
-        <div style="font-size: 40px; margin-left: 60px;">
+        <div>
             Email:<br>
-            <input id="email" style="font-size: 30px; padding: 10px; width: 800px;" type="email" name="user_email" required>
+            <input id="email" style="font-size: 30px; padding: 10px; width: 800px;" type="email" name="user_email"
+                required>
         </div>
 
-        <div style="font-size: 40px; margin-left: 60px;">
+        <div>
             Subject:<br>
-            <input id="subject" style="font-size: 30px; padding: 10px; width: 800px;" type="text" name="user_subject" required>
+            <input id="subject" style="font-size: 30px; padding: 10px; width: 800px;" type="text" name="user_subject"
+                required>
         </div>
 
-        <div style="font-size: 40px; margin-left: 60px;">
-            <br><textarea id="message" style="font-size: 30px; padding: 10px; width: 800px;" name="user_message" placeholder="Your message"></textarea>
+        <div>
+            <br><textarea id="message" style="font-size: 30px; padding: 10px; width: 800px;" name="user_message"
+                placeholder="Your message"></textarea>
         </div>
 
-        <input id="submit" style="margin-left: 60px; font-size: 30px;" type="submit" value="Submit now!" required>
+        <input id="submit" style="margin-left: 30px; font-size: 30px;" type="submit" value="Submit now!" required>
 
     </form>
 
-    <footer>
+    <footer style=" height: 230px;">
 
         <div>
             <p id="fl">Follow Us At</p>
@@ -87,15 +87,18 @@
 
         <div id="icon">
             <div id="fb">
-                <a href="https://www.facebook.com/HuyDandylion"><img style="width: 30px;" src="https://i.imgur.com/vSGvi9u.png" title="source: imgur.com" /></a>
+                <a href="https://www.facebook.com/HuyDandylion"><img style="width: 30px;"
+                        src="https://i.imgur.com/vSGvi9u.png" /></a>
             </div>
 
             <div id="yt">
-                <a href="https://www.youtube.com/channel/UCvKBAIEdslIJum6unqDpnVQ"><img style="width: 30px;" src="https://i.imgur.com/qBUiu6g.png" title="source: imgur.com" /></a>
+                <a href="https://www.youtube.com/channel/UCvKBAIEdslIJum6unqDpnVQ"><img style="width: 30px;"
+                        src="https://i.imgur.com/qBUiu6g.png" /></a>
             </div>
 
             <div id="tw">
-                <a href="https://twitter.com/HuyDandylion"><img style="width: 30px;" src="https://i.imgur.com/ZfmLxSP.png" title="source: imgur.com" /></a>
+                <a href="https://twitter.com/HuyDandylion"><img style="width: 30px;"
+                        src="https://i.imgur.com/ZfmLxSP.png" /></a>
             </div>
 
         </div>

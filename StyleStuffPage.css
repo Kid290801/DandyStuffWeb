@@ -4,10 +4,58 @@
 
 ul {
     margin: 0;
-    text-align: left;
+    text-align: center;
+}
+
+.dropbtn {
+    font-family: 'Concert One', cursive;
+    font-weight: bold;
+    background-color: lemonchiffon;
+    color: black;
+    padding: 10px;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 320px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 
 #page_nav ul li {
+    align-items: center;
     display: inline-block;
     padding: 10px;
     margin: 20px;
@@ -28,8 +76,8 @@ ul {
 #Pages {
     text-decoration: none;
     font-weight: bold;
-    font-size: 30px;
-    margin: 50px;
+    font-size: 32px;
+    margin: 16px;
     color: black;
 }
 
@@ -39,45 +87,19 @@ body {
 }
 
 .search {
-    font-size: 30px;
+    font-size: 32px;
+    width: 40%;
     background-color: white;
-    margin-left: 100px;
+    margin-left: 16%;
     padding: 10px;
 }
 
-#image_1 {
-    background-color: lightgray;
-    position: relative;
-    float: left;
-    width: 20%;
+#buy_button {
+    display: inline-block;
 }
 
-#image_2 {
-    background-color: lightgray;
-    position: relative;
-    float: left;
-    width: 20%;
-}
-
-#image_3 {
-    background-color: lightgray;
-    position: relative;
-    float: left;
-    width: 20%;
-}
-
-#image_4 {
-    background-color: lightgray;
-    position: relative;
-    float: left;
-    width: 20%;
-}
-
-#image_5 {
-    background-color: lightgray;
-    position: relative;
-    float: left;
-    width: 20%;
+#remove-button {
+    display: inline-block;
 }
 
 body {
@@ -165,16 +187,14 @@ table {
 }
 
 .image_container {
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-bottom: 5px;
+    margin: 10px;
+    height: 300px;
     border: solid 4px black;
 }
 
 button {
     background-color: lemonchiffon;
-    font-size: 25px;
+    font-size: 20px;
     border-color: aqua;
 }
 
@@ -194,17 +214,30 @@ button {
 }
 
 @media screen and (max-width: 1000px) {
-    #page_nav ul li {
-        margin: 5px;
+    .dropbtn {
+        padding: 5px;
+        font-size: 28px;
     }
-    #Pages {
+    .dropdown {
+        padding: 5px;
         margin: 10px;
     }
+    .dropdown-content {
+        min-width: 280px;
+    }
+    #page_nav ul li {
+        padding: 5px;
+        margin: 10px;
+    }
+    #Pages {
+        font-size: 28px;
+        margin: 8px;
+    }
     .search {
-        font-size: 30px;
-        background-color: white;
-        margin-left: 10px;
-        padding: 10px;
-        width: 250px;
+        font-size: 28px;
+        width: 20%;
+        margin: 10px;
+        margin-left: 5%;
+        padding: 5px;
     }
 }
